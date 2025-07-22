@@ -17,7 +17,7 @@ Este projeto utiliza o microcontrolador **RP2040 (Raspberry Pi Pico W)**, sensor
 
 ### Interface Web (HTTP Server)
 - Servidor web embarcado na Raspberry Pi Pico W.
-- **Página de Gráficos**: dados em tempo real com gráficos interativos (atualização a cada 2 segundos).
+- **Página de Gráficos**: dados em tempo real com gráficos interativos (atualização a cada 5 segundos).
 - **Página de Configuração de Limites**: formulário para definir limites de temperatura, umidade e pressão.
 - **Formulário de Offsets de Calibração**: permite aplicar offsets diretamente pela interface.
 - Comunicação via AJAX (JSON).
@@ -47,11 +47,10 @@ Este projeto utiliza o microcontrolador **RP2040 (Raspberry Pi Pico W)**, sensor
 
 ## Conexões (GPIO)
 
-| Dispositivo         | Barramento | SDA | SCL | Endereço I2C | Observações                                        |
+| Dispositivo         | Barramento | Gp  | Gp | Endereço I2C | Observações                                        |
 |---------------------|------------|-----|-----|----------------|----------------------------------------------------|
 | AHT20               | i2c1       | 2   | 3   | 0x38          | Conectado na I2C1                                 |
 | BMP280              | i2c0       | 0   | 1   | 0x76 ou 0x77  | Conectado na I2C0                                 |
-| Display SSD1306     | i2c1       | 14  | 15  | 0x3C          | Conectado na I2C1                                 |
 | Botão A             | -          | 5   | -   | -             | Alterna a página web                              |
 | Botão B (BOOTSEL)   | -          | 6   | -   | -             | Entra no modo de gravação                         |
 | Buzzer              | -          | 21 | - | -             | Acionado por alertas                              |
