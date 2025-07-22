@@ -127,5 +127,4 @@ Este projeto utiliza o microcontrolador **RP2040 (Raspberry Pi Pico W)**, sensor
 - Offsets e limites **não são persistentes**. Serão perdidos após reinício.
 - Para persistência, utilize armazenamento em Flash (`pico_nvm`, `pico_unique_id`, etc).
 
----
-# meterelogicaInterfaceWeb
+
